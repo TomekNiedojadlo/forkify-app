@@ -107,7 +107,6 @@ const clearBookmarks = function () {
 };
 // clearBookmarks();
 
-console.log(state.recipe);
 export const uploadRecipe = async function (newRecipe) {
   try {
     console.log(newRecipe);
@@ -132,7 +131,6 @@ export const uploadRecipe = async function (newRecipe) {
       servings: +newRecipe.servings,
       ingredients,
     };
-    console.log(recipe);
 
     const data = await AJAX(`${API_URL}?key=${API_KEY}`, recipe);
 
